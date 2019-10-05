@@ -41,7 +41,7 @@ public class CityRepository {
 	public City getByCepFromRest(String cep) {
 		
 		City city = restTemplate.getForObject(
-				ibgeServiceUrl + "/04500200", City.class);
+				ibgeServiceUrl + "/" + cep, City.class);
 		return city;
 	}
 
