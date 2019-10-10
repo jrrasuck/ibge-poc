@@ -3,13 +3,13 @@ package com.ford.fp2.ibgepoc.dto;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class City {
+public class IbgeInfo {
 
 	private Long id;
 	
-	private String name;
+	private String cityName;
 	
-	private String simpleName;
+	private String citySimpleName;
 	
 	private String state;
 	
@@ -29,20 +29,20 @@ public class City {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getCityName() {
+		return cityName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
 	}
 
-	public String getSimpleName() {
-		return simpleName;
+	public String getCitySimpleName() {
+		return citySimpleName;
 	}
 
-	public void setSimpleName(String simpleName) {
-		this.simpleName = simpleName;
+	public void setCitySimpleName(String citySimpleName) {
+		this.citySimpleName = citySimpleName;
 	}
 
 	public String getState() {
@@ -84,5 +84,5 @@ public class City {
 	public void setCepMax(String cepMax) {
 		this.cepMax = cepMax;
 	}
-
+	
 }
